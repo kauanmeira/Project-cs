@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SalesMVC.Models.ViewModels;
 using System.Diagnostics;
-using WebApplication1.ViewModels.ErrorViewModels;
 
-namespace WebApplication1.Controllers
+namespace SalesMVC.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,19 +15,11 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
-           
             return View();
-
         }
 
         public IActionResult Privacy()
         {
-            return View();
-        }
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Test C#";
-            ViewData["email"] = "kauan@gmail.com";
             return View();
         }
 
