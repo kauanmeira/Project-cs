@@ -25,13 +25,15 @@ namespace SalesWebMvc
             services.AddDbContext<SalesWebMvcContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("SalesWebMvcContext"),
                     new MySqlServerVersion(new Version(8, 0, 25))));
+            services.AddScoped<SeedingService>();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {
