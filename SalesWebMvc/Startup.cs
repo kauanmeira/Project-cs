@@ -28,6 +28,7 @@ namespace SalesWebMvc
                     new MySqlServerVersion(new Version(8, 0, 25))));
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SeedingService seedingService)
