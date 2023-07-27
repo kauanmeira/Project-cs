@@ -47,6 +47,7 @@ Esta view filtra as vendas do período e retorna de forma agrupada, o departamen
 ![image](https://github.com/kauanmeira/Project-cs/assets/114404211/a85d6b3e-b893-4d2d-845c-eff858b47903)
 
 Database:
+
 ![image](https://github.com/kauanmeira/Project-cs/assets/114404211/c47291bb-54d5-4426-a7e4-564eb43dd37f)
 ![image](https://github.com/kauanmeira/Project-cs/assets/114404211/e5f0083c-f489-44d7-a5ab-26323c63bf31)
 
